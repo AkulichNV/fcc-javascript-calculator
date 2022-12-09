@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Tammudu" rel="stylesheet"> 
+    <link rel="icon" href="./assets/icons/favicon.ico">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class = "container">
+        <div class = "row">
+          <div class = "col-12-xs text-center calculator">
+            <h2> freeCodeCamp</h2>
+            <p class = 'logo'>CALCULATOR</p>
+            <div>
+              <div  class = "resultLine" >
+                <div id = "result" class = "str1">0</div>
+                <div id = "answer" class = "str2">0</div>
+              </div>
+              <div class = "col-12-xs text-center row1">
+                <button class = "longb pinkb" name = "AC" onmousedown="ac()">AC</button> 
+                <button class = "longb pinkb" name = "CE" onmousedown="ce()">CE</button>
+              </div>
+              <div class = "col-12-xs text-center row2">
+                <button name = "neg" onmousedown="fNeg()">+/-</button>
+                <button name = "perc" onmousedown="fPer()">%</button>
+                <button name = "div" onmousedown="fOp('/')">&divide;</button>
+                <button name = "mult" onmousedown="fOp('*')">&times;</button>
+              </div>
+              <div class = "col-12-xs text-center row3">
+                <button name = "a7" onmousedown="fNum(7)">7</button>
+                <button name = "a8" onmousedown="fNum(8)">8</button>
+                <button name = "a9" onmousedown="fNum(9)">9</button>
+                <button name = "min" onmousedown="fOp('-')">&minus;</button>
+              </div>
+              <div class = "col-12-xs text-center row4">
+                <button name = "a4" onmousedown="fNum(4)">4</button>
+                <button name = "a5" onmousedown="fNum(5)">5</button>
+                <button name = "a6" onmousedown="fNum(6)">6</button>
+                <button class = "tallb" name = "plus"  onmousedown="fOp('+')">+</button>
+              </div>
+              <div class = "col-12-xs row5">
+                <button name = "a1" onmousedown="fNum(1)">1</button>
+                <button name = "a2" onmousedown="fNum(2)">2</button>
+                <button name = "a3" onmousedown="fNum(3)">3</button>
+              </div>
+              <div class = "col-12-xs text-center row6">
+                <button name = "a0" onmousedown="fNum(0)">0</button>
+                <button name = "dot" onmousedown="fDot()">&middot;</button>
+                <button class = "longb" name = "answer" onmousedown="fOp('=')">=</button>
+              </div>
+            </div>
+              
+              
+          </div>
+        </div>
+      </div>
+      <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
